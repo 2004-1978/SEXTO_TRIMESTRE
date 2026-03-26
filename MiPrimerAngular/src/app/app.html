@@ -11,6 +11,7 @@
 
   <H2>{{ Bienvenidos }}</H2>
 
+  <!-- Ul y Ol es para crear listas, Ul es para listas no ordenadas y Ol es para listas ordenadas y li da las biñetas -->
   <ul>
     <li>Cuadernos</li>
     <li>Gorras</li>
@@ -18,7 +19,10 @@
   </ul>
 
   <h2>Antigua Sintaxis</h2>
-  <ul>
+
+  <!-- El *ngFor es una directiva estructural que se utiliza para iterar sobre una colección de datos y generar elementos HTML dinámicamente en función de esa colección. En este caso, se está utilizando para iterar sobre la lista de "Estudiantes" y crear un elemento <li> para cada objeto en esa lista, mostrando su valor dentro del elemento <li>.-->
+  <!-- Let es una palabra clave que se utiliza para declarar una variable local dentro del contexto de la directiva *ngFor. En este caso, se está declarando una variable llamada "objeto" que representa cada elemento individual de la lista "Estudiantes" durante la iteración.-->
+    <ul>
     <li *ngFor="let objeto of Estudiantes">{{objeto}}</li>
   </ul>
   
