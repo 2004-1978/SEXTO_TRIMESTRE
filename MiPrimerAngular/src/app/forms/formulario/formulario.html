@@ -1,0 +1,41 @@
+<form [formGroup]="formulario" (ngSubmit)="enviar()">
+
+  <label>Nombre</label>
+  <input type="text" formControlName="nombre">
+  <br><br>
+  <label>Correo</label>
+  <input type="email" formControlName="correo">
+  <br><br>
+  <label>Tipo de Documento</label>
+  <select type="text" formControlName="tipo_de_documento">
+    <option value="cc">Cédula de Ciudadanía</option>
+    <option value="ti">Tarjeta de Identidad</option>
+    <option value="pasaporte">Pasaporte</option>
+  </select>
+  <br><br>
+  <label>Número de Documento</label>
+  <input type="text" formControlName="numero_de_documento">
+  <br><br>
+  <label>Fecha de Nacimiento</label>
+  <input type="date" formControlName="fecha_de_nacimiento">
+  <br><br>
+  <label>Estado Civil</label>
+  <select type="text" formControlName="estado_civil">
+    <option value="soltero">Soltero(a)</option>
+    <option value="casado">Casado(a)</option>
+    <option value="divorciado">Divorciado(a)</option>
+    <option value="viudo">Viudo(a)</option>
+  </select>
+
+  <br>
+
+  <button type="submit">Enviar</button>
+
+  <br>
+
+  <input type="checkbox" id="politica_datos" name="politica_datos" required>
+  <label for="politica_datos">
+    He leído y acepto la <a href="/politica-privacidad" target="_blank">política de tratamiento de datos personales</a>.
+  </label>
+
+</form>
