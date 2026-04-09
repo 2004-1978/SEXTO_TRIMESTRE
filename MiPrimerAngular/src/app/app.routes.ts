@@ -6,5 +6,8 @@ import { FormularioComponent } from './forms/formulario/formulario';
 
 export const routes: Routes = [
   { path: 'formulario', component: FormularioComponent },
-  { path: '', redirectTo: 'formulario', pathMatch: 'full' }
+  { path: '', redirectTo: 'formulario', pathMatch: 'full' },
+  { path: 'Inicio', component: Inicio },
+  { path: 'Ejercicios', component: Ejercicios },
+  { path: 'Contacto', component: Contacto }
 ];
